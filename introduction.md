@@ -39,3 +39,8 @@ Download the pythonforlibraries.ova image from:
 6. Click on the import (you need a computer with at least 2GB ram and 4GB free space)
 
 7. Now you have a new Debian Linux Virtual Machine. When you double click on it the VM will launch and stop at a login window after a few seconds. The username is mdewey and the password is l1br4r135 
+
+Now that you can log into the virtual machine we will be using XTerm for the rest of the class. At the bottom left of the Desktop Click on the Start Menu --> System Tools --> XTerm
+
+Launch XTerm
+![Launch Xterm](images/landingimage.png)
