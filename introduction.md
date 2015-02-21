@@ -44,3 +44,5 @@ Now that you can log into the virtual machine we will be using XTerm for the res
 
 Launch XTerm
 ![Launch Xterm](images/landingimage.png)
+
+You can close the Virtual Machine by Selecting the Logout button at the bottom and shutting it down. 
