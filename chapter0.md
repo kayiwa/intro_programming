@@ -72,3 +72,18 @@ Python here is telling in "almost English" that there we used invalid Syntax. Pa
 
 ### Integer, Floating-Point and String Data Types
 
+A _data type_ is a category is a category for values, and every value matches to exactly one data type. In the last section we demonstrated how Python expressions evaluate to one value. This value goes into tha various data type that Python has. The three most common ones we will encounter are Integers, Floating-point numbers (sometimes floats) and Strings. The values `42` and `-21` for example are _integer_ values. The integer (sometimes _int_) data type indicates values that are whole numbers. Numbers that have a decimal point such as `3.14` or `2.718` are called floating-point numbers. In our examples earlier we used `42` and `42.0` the former is an integer while the latter is a floating-point number and the differing results demonstrated that. We will address these as we delve further. Finally the last commonly used data type is Strings. Python programs that contain text values are referred to as _strings_. The text characters are surrounded either with double or single quotes. It is only important to remain consistent. The author of this book has used single quotes significantly and you will notice that here. This is a matter of taste. These are some examples of strings `'Hello'` and `'Goodbye Cruel World'`. 
+
+As you get used to using programming one of the syntax errors you will encounter quite a bit early on is the `SyntaxError: EOL` error demonstrated below.
+
+```python
+>>> 'Goodbye Cruel World!
+  File "<stdin>", line 1
+    'Goodbye Cruel World!
+                        ^
+
+SyntaxError: EOL while scanning string literal
+>>>
+```
+
+Once again Python marks the exact spot where it failed to understand what we mean. Learning how to interpret these messages will suit you as you start out.
