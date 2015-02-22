@@ -27,8 +27,31 @@ In Python, 21 + 21 is an _expression_, which is the smallest and most basic kind
 
 In our second example enter the value *42* with no operators. This is also an expression which just evaluates to itself.
 
-```bash
+```python
 >>> 42
 42
+```
+
+We have seen the use of the addition operator above. Python uses others that we will demonstrate below.
+
+```python
+>>> 2 + 8 * 5
+42
+>>> (2 + 8) * 5
+50
+>>> 234567 * 456789
+107147625363
+>>> 2 ** 4
+16
+>>> 42 / 5
+8
+>>> 42.0 / 5
+8.4
+>>> 42.0 // 5
+8.0
+>>> 42 % 5
+2
+>>> (8 - 2) * ((3 + 4.0) / (5 - 2))
+14.0
 ```
 
