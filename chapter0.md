@@ -55,3 +55,20 @@ We have seen the use of the addition operator above. Python uses others that we 
 14.0
 ```
 
+All the examples we just entered expressions that Python evaluates to a single value. Python uses the same order of operations as mathematics. The `**` operation is evaluated first; the `*,/,//,` and `%` operators are evaluated next, from left to right; and the `+` and `-` are evaluated last (also from left to right). Parentheses are used to override the usual precedence if you need to. 
+
+The rules for putting operators and values together to form expressions are a key part of Python programming language. The ability to enter these values and operators and values in the interactive shell allows one to test validity of the Python language syntax as we will demonstrate below. 
+
+```python
+>>> 41 +
+  File "<stdin>", line 1
+    41 +
+       ^
+SyntaxError: invalid syntax
+>>>
+```
+
+Python here is telling in "almost English" that there we used invalid Syntax. Part of learning how to program is learning how to get comfortable with the numerous errors that you will encounter. In the example above, adding an integer after the `+` operator or eliminating the operator will rid you the error. 
+
+### Integer, Floating-Point and String Data Types
+
