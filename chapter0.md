@@ -87,3 +87,44 @@ SyntaxError: EOL while scanning string literal
 ```
 
 Once again Python marks the exact spot where it failed to understand what we mean. Learning how to interpret these messages will suit you as you start out.
+
+### String Concatenation and Replication
+
+Python operators meaning vary based on the data types values next to it. As we will see below the `+` is used for addition when next to integers or floating-points values. Start your Python shell and do the following.
+
+```python
+>>> 'Monty' + 'Python'
+'MontyPython'
+```
+
+In the example above Python joins the strings together. This is known as _string concatenation_. The expression evaluates down to a new string value that combines the text of the two strings. When we try to add a string and an integer we will get a _TypeError_ as seen below. 
+
+```python
+>>> 'Monty' + 42
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot concatenate 'str' and 'int' objects
+```
+
+Once again pay attention to the error message at the very bottom which in _almost_ English tells you what Python interprets what we typed in. In this case Python is telling us it cannot concatenate an integer to the string 'Monty'. Python can convert data types as we will see shortly but as the example above demonstrates it does not do this automatically. 
+Earlier we say the `*` operator is used in multiplying two or more integers or floating-point values. In the example below we will see what it does with strings.
+
+```python
+'Spam' * 5
+'SpamSpamSpamSpamSpam'
+```
+Here we see the expression evaluates to a single string value that repeats the original value to a number equal to the integer value. 
+
+```python
+'Monty' * 'Python'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+'Spam' + 2.5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: cannot concatenate 'str' and 'float' objects
+```
+
+In the examples above we learn that the `*` will not multiply strings together and will not concatenate strings with floats.
+
