@@ -128,3 +128,51 @@ TypeError: cannot concatenate 'str' and 'float' objects
 
 In the examples above we learn that the `*` will not multiply strings together and will not concatenate strings with floats.
 
+### Storing Values in Variables
+
+_Variable_ in progamming are best thought of as a location in the computer's memory that stores a value. 
+
+In Python they take the format of 
+
+```python
+variable = expression
+```
+
+How does a variable name get stuck to an object? Generally, the assignment statement does this labeling. First, we need to talk about what assignment means, then we’ll look at how to write it.
+
+1. *An assignment* statement evaluates the expression.
+2. *An assignment* statement then assigns the result to a variable. In effect, it pins the variable name onto the result. There are two variations on this.
+     - If the variable name already existed, the name tag is moved from the old value to this new value.
+     - If the variable name did not already exist, it is created and pinned on this new value.
+
+We generally don’t worry about creating new variables; there’s no cost, they’re just names. Create as many as you need to make your program’s purpose clear.
+
+Let's create a few variables in the interactive shell:
+
+```python
+>>> ham = 40
+>>> ham
+40
+>>> jam = 2
+>>> spam = ham + jam
+>>> spam
+42
+>>> spamalot = spam + ham + jam
+>>> spamalot
+84
+>>> spamalot = spamalot + 2
+>>> spamalot
+86
+```
+
+What happened here is we _initialized_ (really created) a variable ham and the value 40 was stored in it. We then can use this variable in expressions as we did. Take special note that Python forgets the old value when you assign a new one to it. The _variable_ spamalot in the last exercise illustrates this.
+
+#### Variable Names
+
+Python provides the following three rules for variable names
+
+1. Can only be one word
+2. Can only use letters, numbers and the underscore `_` character.
+3. Cannot begin with a number.
+
+A good variable name describes the data it contains. It allows the person reading the code (oftentimes it is you) to understand what your program is doing. Thus far our variables have been not so clever references to Monty Python and Hitchhiker's Guide to the Universe. This is discouraged as it is often less funny than you think.
