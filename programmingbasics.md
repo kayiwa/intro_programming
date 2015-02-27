@@ -176,3 +176,44 @@ Python provides the following three rules for variable names
 3. Cannot begin with a number.
 
 A good variable name describes the data it contains. It allows the person reading the code (oftentimes it is you) to understand what your program is doing. Thus far our variables have been not so clever references to Monty Python and Hitchhiker's Guide to the Universe. This is discouraged as it is often less funny than you think.
+
+### Hello World!
+
+Until now we have explored Python using the interactive shell. All these examples cease to exist when we exit the shell. The interactive shell excels in experimenting with python but all our programs will have to be written using a Text Editor. Our Virtual Machine already has an editor in Leadpad. This _file editor_ is similar to Notepad or Textmate. From the Bottom left menu select *Accessories*  > *Leafpad*
+
+Leafpad Launch:
+![Leafpad Launch](images/leafpad.png)
+
+From your XTerm application create a new directory with the name pythonfiles where we will save our work using the following commands.
+
+```bash
+cd ~
+mkdir pythonfiles
+```
+
+Type the following into your text editor and save the file as `helloworld.py`
+
+```python
+#!/usr/bin/env python
+# This is our first program
+
+print('hello world!')
+print('What is your name?') 
+user_name_entered = input()
+print('That is a lovely name,' + user_name_entered)
+```
+
+Hello World Save As:
+![helloworld save](images/helloworld.png)
+
+After you save your file. Switch to the XTerm application and type the following commands to run your program.
+
+```bash
+cd ~
+python pythonfiles/helloworld.py
+hello world!
+What is your name?
+...
+```
+
+The three ellipses at the bottom will not show up and are there because results will vary based on what you will enter.
