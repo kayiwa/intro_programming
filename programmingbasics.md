@@ -216,4 +216,23 @@ What is your name?
 ...
 ```
 
-The three ellipses at the bottom will not show up and are there because results will vary based on what you will enter.
+The three ellipses at the bottom will not show up and are there because results will vary based on what you will enter. Congratulations! You've just saved your first Python (admittedly for this class) program. We did however cheat and it is worth revisiting what the program actually did.
+
+#### Program Breakdown
+
+If you have strictly followed the instructions thus far let's walk through each of the lines. Open the `helloworld.py` program or use the image above as we walk through each line.
+
+- Line 1: `#!/usr/bin/env python`  
+
+In Unix-like operating systems a character sequence consisting of the number sign and an exclamation mark (`#!`) (also known as a shebang) is at the top of a script the program loader parses the rest of the line as an interpreter directive. Given the right set of permissions the example above can be run `./helloworld.py` 
+- Line 2: `# This is our first program`
+
+This is called a comment. Unlike the number sign in Line 1, in this case the number sign means ignore everything after. Comments are extremely useful notes to the person reading the program (often you) at a future date. Sometimes the number sign can be placed in front of actual code -known as _commenting out_ code- This can be useful when trying to test what actually breaks your program.
+
+- Line 3: 
+
+This has blank or white space. It is in there to add legibility. Python will ignore this white space but it makes it easier for one to read your (again often you at a future date) programs when you use proper spacing.
+
+- Line 4: `print('hello world!')
+
+The `print()` function displays the string value inside the parentheses on the screen. In our program we can python is calling the print function and the string value of 'hello world!' is passed to the print function. A value passed to a function is called an *argument*
