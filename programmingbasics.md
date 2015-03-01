@@ -233,11 +233,11 @@ This is called a comment. Unlike the number sign in Line 1, in this case the num
 
 This has blank or white space. It is in there to add legibility. Python will ignore this white space but it makes it easier for one to read your (again often you at a future date) programs when you use proper spacing.
 
-- Line 4: `print('hello world!')
+- Line 4: `print('hello world!')`
 
 The `print()` function displays the string value inside the parentheses on the screen. In our program we can python is calling the print function and the string value of 'hello world!' is passed to the print function. A value passed to a function is called an *argument*
 
-- Line 5: `print('What is your name')
+- Line 5: `print('What is your name')`
 
 In Python there isn't a difference between lines 4 and 5 except for arguments passed to the print function.
 
