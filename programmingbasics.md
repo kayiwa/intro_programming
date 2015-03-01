@@ -199,7 +199,7 @@ Type the following into your text editor and save the file as `helloworld.py`
 
 print('hello world!')
 print('What is your name?') 
-user_name_entered = input()
+user_name_entered = raw_input()
 print('That is a lovely name,' + user_name_entered)
 ```
 
@@ -236,3 +236,18 @@ This has blank or white space. It is in there to add legibility. Python will ign
 - Line 4: `print('hello world!')
 
 The `print()` function displays the string value inside the parentheses on the screen. In our program we can python is calling the print function and the string value of 'hello world!' is passed to the print function. A value passed to a function is called an *argument*
+
+- Line 5: `print('What is your name')
+
+In Python there isn't a difference between lines 4 and 5 except for arguments passed to the print function.
+
+- Line 6: `user_name_entered = raw_input()`
+
+This *raw_input* function call evaluates to a string whatever text the user enters and strips of the new line from the input. In our example it assigns this to the *user_name_entered* variable. If we entered the name 'Monty', then the expression would evaluate to user_name_entered = 'Monty'. 
+
+- Line 7: `print('That is a lovely name,' + user_name_entered)`
+
+Once again we are using the print function. We pass the expression 'That is a lovely name' and the contents of the variable *user_name_entered*. Remember expressions evaluate to one single value so in this case if we used the name 'Monty' we will be passing the argument 'That is a lovely name Monty' to the print function.
+
+
+This concludes our simple program evaluation.
